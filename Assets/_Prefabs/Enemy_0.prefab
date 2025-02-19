@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 4170594413957933940}
   - component: {fileID: 4170594413957933943}
   - component: {fileID: 4170594413957933942}
-  - component: {fileID: 299012310798264051}
   - component: {fileID: 537649585}
+  - component: {fileID: -5750977528021794596}
+  - component: {fileID: -8798895088115635916}
   m_Layer: 9
   m_Name: Enemy_0
   m_TagString: Untagged
@@ -65,22 +66,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &299012310798264051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4170594413957933941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4ecb19a317264742b9bf47de1ef407c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  fireRate: 0.3
-  health: 10
-  score: 100
 --- !u!114 &537649585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,6 +84,38 @@ MonoBehaviour:
   screenLocs: 0
   camWidth: 0
   camHeight: 0
+--- !u!114 &-5750977528021794596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4170594413957933941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e7154f6565e1c40b77c1aa7d29069a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  fireRate: 0.3
+  health: 10
+  score: 100
+  powerUpDropChance: 0.25
+--- !u!114 &-8798895088115635916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4170594413957933941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78777702bb923be48ae8e42c8b7f2364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingColor: 0
+  blinkCompleteTime: 0
+  ignoreOnCollisionEnter: 0
 --- !u!1001 &4170594414113923240
 PrefabInstance:
   m_ObjectHideFlags: 0
